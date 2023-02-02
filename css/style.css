@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p {
+    margin-top: 0;
+}
+
+/* Navigation with Banner */
+/* header{
+    min-height: 10vh;
+    position: sticky;
+    top: 0;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #E0144C;
+    color: #ffffff;
+ }
+nav h2{
+    padding: 0 5rem;
+    width: 40%;
+    color: #b0ddaf;
+    font-size: 4.5rem;
+    font-family: 'Shadows Into Light', cursive;
+    cursor:not-allowed;
+    
+}
+nav ul{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    font-weight: 500;
+}
+
+nav ul li:hover{
+    background-color:#A62349;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: white;
+}  */
+
+#banner{
+    min-height: 90vh;
+    display: flex;
+    width: 100%;
+    background-image: url(../src/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.banner-content{
+    width: 70%;
+    margin: 5% auto;
+    align-items: center;
+    padding: 3rem;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.123);
+    border-radius: 1rem;
+}
+.banner-content h2{
+    font-size: 6rem;   
+    font-family: 'Montserrat', sans-serif;
+    line-height: normal;
+    width: 50%;
+}
+
+.banner-content span{
+    color:#E0144C;
+    font-weight: 900;
+    font-size:8rem;
+}
+
+.banner-content p{
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #dddcdc;
+    margin: 3rem 0rem;
+}
+
+.banner-content button{
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    border: 0.3rem solid #E0144C;
+    color: white;
+    font-weight: 700;
+    font-family: 'Aleo', serif;
+    letter-spacing: 0.1rem;
+    border-radius: 2.5rem;
+    margin-right: 3rem;
+    background: rgba(255, 255, 255, 0);
+}
+.banner-content button:hover{
+    background-color: #E0144C;
+}
+
+/* Chefs Section */
+
+#Chefs{
+    margin: 5rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    max-width: 100vw;
+    flex-wrap: wrap;
+
+}
+.chefs-content{
+    width: 50%;
+}
+.chefs-image{
+    width: 50%;
+    background-image: url(../src/chef.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chefs-content h2{
+    font-size: 6rem;
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #E0144C;
+}
+.chefs-content h4{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #658864;
+    margin-bottom: 3rem;
+}
+.chefs-content p{
+    font-family: 'Montserrat', sans-serif;
+    color: #5e5d5d;
+    font-size: 2.2rem;
+    padding: 2rem 5rem;
+}
+.chefs-content span{
+    color: #E0144C;
+    font-size:2.8rem ;
+}
+
+/* Card section */
+
+#Dishes {
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 35rem;
+    height: 25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.card-wrap h2 {
+    font-size: 2rem;
+    font-family: 'Aleo', serif;
+    margin: 1.5rem 0;
+    color: #E0144C;
+    text-align: center;
+}
+
+.card-img1 {
+    background-image: url(../src/special_biriyani.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img2 {
+    background-image: url(../src/roti_paneer.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img3 {
+    background-image: url(../src/dum_briyani.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer section */
+
+footer{
+    min-height: 30vh;
+    background-color: #E0144C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .links{
+    height: 2rem;
+    width: 2rem;
+}
+.footer-content p{
+    font-size: 2.5rem;
+}
+.social-media-link{
+    margin-top: 2rem;
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;   
+}
+
+/* Media Queary */
+
+@media screen and (max-width:688px) {
+    .banner-content button{
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    .chefs-image{
+        display: none;
+    }
+    .chefs-content {
+         width: 100%;
+    }
+    .banner-content h2 {
+        font-size: 4rem;
+        width: 50%;
+    }
+
+    .banner-content span {
+        font-size: 6rem;
+    }
+
+    .banner-content p {
+        font-size: 1.2rem;
+        /* margin: 3rem 0rem; */
+    }
+}
